@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-const Profile = ({ username, tag, location, avatar, stats }) => (
+export const Profile = ({ username, tag, location, avatar, stats }) => (
   <div class="profile">
     <div class="description">
       <img
@@ -33,5 +33,9 @@ Profile.propTypes = {
   tag: PropTypes.string.isRequired,
   location: PropTypes.number.isRequired,
   avatar: PropTypes.string.isRequired,
-  stats: PropTypes.object.isRequired,
+  stats: PropTypes.shape({
+    followers: PropTypes.number.isRequired,
+    likes: PropTypes.number.isRequired,
+    views: PropTypes.number.isRequired,
+  }).isRequired,
 };
