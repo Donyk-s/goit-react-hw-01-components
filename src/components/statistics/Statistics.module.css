@@ -1,0 +1,28 @@
+.statistics {
+  /* width: 300px; */
+  margin: 0 auto;
+  display: flex;
+  width: 400px;
+}
+
+.stat_list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+.statistics li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.statistics .label {
+  margin-right: 10px;
+  width: 50px;
+  font-weight: bold;
+}
+
+.statistics .percentage {
+  width: 40px;
+}

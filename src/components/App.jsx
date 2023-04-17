@@ -2,8 +2,10 @@ import user from './profile/user';
 import { Profile } from './profile/Profile';
 import { FriendList } from './friendList/FriendList';
 import friends from './friendList/friends';
-// import { TransactionHistory } from './transactionHistory/TransactionHistory';
-// import transactions from './transactionHistory/transactions';
+import { TransactionHistory } from './transactionHistory/TransactionHistory';
+import transactions from './transactionHistory/transactions';
+import { StatisticsComponent } from './statistics/Statistics';
+import statisticsData from './statistics/data';
 export const App = () => {
   return (
     <div
@@ -24,9 +26,9 @@ export const App = () => {
         avatar={user.avatar}
         stats={user.stats}
       />
-      {/* <Statistics title="Upload stats" stats={data} /> */}
+      <StatisticsComponent title="Upload stats" stats={statisticsData} />
       <FriendList friends={friends} />
-      {/* <TransactionHistory items={transactions} /> */}
+      <TransactionHistory transactions={transactions} />
     </div>
   );
 };
