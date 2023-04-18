@@ -1,18 +1,18 @@
-import user from './profile/user';
+import user from './data/user.json';
 import { Profile } from './profile/Profile';
 import { FriendList } from './friendList/FriendList';
-import friends from './friendList/friends';
+import friends from './data/friends.json';
 import { TransactionHistory } from './transactionHistory/TransactionHistory';
-import transactions from './transactionHistory/transactions';
+import transactions from './data/transactions.json';
 import { StatisticsComponent } from './statistics/Statistics';
-import statisticsData from './statistics/data';
+import statisticsData from './data/data.json';
 export const App = () => {
   return (
     <div
       style={{
-        // height: '100vh',
+        height: '100vh',
         display: 'flex',
-        justifyContent: 'center',
+
         alignItems: 'center',
         fontSize: 40,
         color: '#010101',
